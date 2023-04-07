@@ -8,9 +8,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Reference Include="System.Windows.Forms">
-        <HintPath>..\..\..\..\..\Program Files\JetBrains\Rider\r2r\2023.1.0R\0FC8B32C0371D9BD7BEE07CA26E5C48\NetCore\runtimes\unix\lib\netcoreapp3.0\System.Windows.Forms.dll</HintPath>
-      </Reference>
+        <Reference Include="System.Windows.Forms">
+            <HintPath>..\..\..\..\..\Program Files\JetBrains\Rider\r2r\2023.1.0R\0FC8B32C0371D9BD7BEE07CA26E5C48\NetCore\runtimes\unix\lib\netcoreapp3.0\System.Windows.Forms.dll</HintPath>
+        </Reference>
     </ItemGroup>
 
 </Project>
